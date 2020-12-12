@@ -9,15 +9,39 @@ function Particle(x,y){
 	this.color3 = random(255);
 
 	this.show = function(){
-		// stroke(this.color1,this.color2,this.color3,70);
-		// strokeWeight(this.w);
-		// point(this.pos.x,this.pos.y);
+		switch(mode){
+			case 1 :
+				//stroke(this.color1,this.color2,this.color3,70);
+				//strokeWeight(this.w);
+				//point(this.pos.x,this.pos.y);
+				stroke(this.color1,this.color2,this.color3,40);
+				strokeWeight(2);
+				line(this.pos.x,this.pos.y,this.prev.x,this.prev.y);
+				this.prev.x = this.pos.x;
+				this.prev.y = this.pos.y;
+				break;
+			case 2 :
+				stroke(this.color1,this.color2,this.color3,70);
+				strokeWeight(this.w);
+				point(this.pos.x,this.pos.y);
+				stroke(this.color1,this.color2,this.color3,40);
+				strokeWeight(2);
+				line(this.pos.x,this.pos.y,this.prev.x,this.prev.y);
+				this.prev.x = this.pos.x;
+				this.prev.y = this.pos.y;
+				break;
+			case 3 :
+				stroke(this.color1,this.color2,this.color3);
+				strokeWeight(1);
+				point(this.pos.x,this.pos.y);
+				stroke(this.color1,this.color2,this.color3,40);
+				strokeWeight(2);
+				//line(this.pos.x,this.pos.y,this.prev.x,this.prev.y);
+				//this.prev.x = this.pos.x;
+				//this.prev.y = this.pos.y;
+				break;
+		}
 		
-		stroke(this.color1,this.color2,this.color3,40);
-		strokeWeight(2);
-		line(this.pos.x,this.pos.y,this.prev.x,this.prev.y);
-		this.prev.x = this.pos.x;
-		this.prev.y = this.pos.y;
 	}
 
 	this.update = function(){

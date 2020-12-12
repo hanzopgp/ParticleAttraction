@@ -1,12 +1,24 @@
 var particles = [];
 var attractors = [];
 var repulsors = [];
-var nbParticles = 500;
+var nbParticles = 1000;
 var bool;
 var tmp = 0;
 var frameCount;
+var mode = 3;
 
-function setup(){
+function preload(){
+	var params = getURLParams();
+	if(params.mode){
+		mode = parseInt(params.mode);
+		console.log(mode);
+	}
+}
+
+function setup(){	
+	if(mode == 3){
+		nbParticles = 2000; //points
+	}
 	createCanvas(windowWidth,windowHeight);
 	background(0); //lines
 	for(var i = 0; i < nbParticles; i++){
@@ -15,7 +27,9 @@ function setup(){
 }
 
 function draw(){
-	//background(0); //point
+	if(mode == 3){
+		background(0); //point
+	}
 	push();
 	strokeWeight(1);
 	fill(0);
