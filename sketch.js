@@ -11,13 +11,15 @@ function preload(){
 	var params = getURLParams();
 	if(params.mode){
 		mode = parseInt(params.mode);
-		console.log(mode);
 	}
 }
 
 function setup(){	
 	if(mode == 3){
 		nbParticles = 2000; //points
+	}
+	if(mode == 5){
+		nbParticles = 500; //slow pc
 	}
 	createCanvas(windowWidth,windowHeight);
 	background(0); //lines
@@ -40,9 +42,11 @@ function draw(){
 	text("Frame : " + frameCount, 80, 80);
 	pop();
 
-	// if(frameCount%250 == 0){
-	// 	background(0);
-	// }
+	if(mode == 4){
+		if(frameCount%250 == 0){
+			background(0);
+	   }
+	}
 
 	for(var i = 0; i < nbParticles; i++){
 		for(var j = 0; j < attractors.length; j++){

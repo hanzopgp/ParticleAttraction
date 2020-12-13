@@ -40,6 +40,13 @@ function Particle(x,y){
 				//this.prev.x = this.pos.x;
 				//this.prev.y = this.pos.y;
 				break;
+			default :
+				stroke(this.color1,this.color2,this.color3,40);
+				strokeWeight(2);
+				line(this.pos.x,this.pos.y,this.prev.x,this.prev.y);
+				this.prev.x = this.pos.x;
+				this.prev.y = this.pos.y;
+				break;
 		}
 		
 	}
