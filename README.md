@@ -6,6 +6,8 @@
 >- [With thin lines](https://hanzopgp.github.io/ParticleAttraction/?mode=1).
 >- [With thick lines](https://hanzopgp.github.io/ParticleAttraction/?mode=2).
 >- [With points](https://hanzopgp.github.io/ParticleAttraction/?mode=3).
+>- [With lines disappearing](https://hanzopgp.github.io/ParticleAttraction/?mode=4).
+>- [For slow computers](https://hanzopgp.github.io/ParticleAttraction/?mode=5).
 
 ## How to :
 
