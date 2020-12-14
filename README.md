@@ -8,6 +8,7 @@
 >- [With points](https://hanzopgp.github.io/ParticleAttraction/?mode=3).
 >- [With lines disappearing](https://hanzopgp.github.io/ParticleAttraction/?mode=4).
 >- [For slow computers](https://hanzopgp.github.io/ParticleAttraction/?mode=5).
+>I learnt p5 thanks to [Daniel Shiffman](https://shiffman.net/).
 
 ## How to :
 
@@ -24,3 +25,4 @@
 
 - https://p5js.org/
 - https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation
+- https://shiffman.net/
