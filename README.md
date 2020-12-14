@@ -3,6 +3,7 @@
 ## Presentation :
 
 >This graphical simulation is using the Newton's law of universal gravitation. This is my first project using P5 library, this library is really enjoyable to use. You can see the demo :
+
 >- [With thin lines](https://hanzopgp.github.io/ParticleAttraction/?mode=1).
 >- [With thick lines](https://hanzopgp.github.io/ParticleAttraction/?mode=2).
 >- [With points](https://hanzopgp.github.io/ParticleAttraction/?mode=3).
